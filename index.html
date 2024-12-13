@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis's Cat Blog</title>
+    <!-- Link to Bootstrap for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with a title and description -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Welcome to Travis's Cat Blog</h1>
+        <p>Your one-stop site to learn about Mona, Maxwell, Tenley, and Rocky!</p>
+    </header>
+
+    <!-- Main content container -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar with navigation links -->
+            <aside class="col-md-3">
+                <nav class="nav flex-column">
+                    <!-- Navigation links to different pages -->
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="mona.html">Mona</a>
+                    <a class="nav-link" href="maxwell.html">Maxwell</a>
+                    <a class="nav-link" href="tenley.html">Tenley</a>
+                    <a class="nav-link" href="rocky.html">Rocky</a>
+                </nav>
+            </aside>
+
+            <!-- Main content section -->
+            <main class="col-md-9">
+                <!-- Blog description -->
+                <h2>About This Blog</h2>
+                <p>This blog is dedicated to the wonderful cats of Travis's life. Explore their unique personalities, vote for your favorite, and enjoy their adorable photos!</p>
+
+                <!-- Voting section -->
+                <h3>Vote for Your Favorite Cat</h3>
+                <form id="pollForm">
+                    <!-- Radio button for Mona -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="catVote" id="monaVote" value="Mona">
+                        <label class="form-check-label" for="monaVote">Mona</label>
+                    </div>
+                    <!-- Radio button for Maxwell -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="catVote" id="maxwellVote" value="Maxwell">
+                        <label class="form-check-label" for="maxwellVote">Maxwell</label>
+                    </div>
+                    <!-- Radio button for Tenley -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="catVote" id="tenleyVote" value="Tenley">
+                        <label class="form-check-label" for="tenleyVote">Tenley</label>
+                    </div>
+                    <!-- Radio button for Rocky -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="catVote" id="rockyVote" value="Rocky">
+                        <label class="form-check-label" for="rockyVote">Rocky</label>
+                    </div>
+                    <!-- Submit button for voting -->
+                    <button type="submit" class="btn btn-primary mt-2">Vote</button>
+                </form>
+
+                <!-- Poll results section -->
+                <h3 class="mt-4">Current Poll Results</h3>
+                <ul id="pollResults" class="list-group">
+                    <!-- Display individual poll results -->
+                    <li class="list-group-item">Mona: <span id="monaResult">0</span> votes</li>
+                    <li class="list-group-item">Maxwell: <span id="maxwellResult">0</span> votes</li>
+                    <li class="list-group-item">Tenley: <span id="tenleyResult">0</span> votes</li>
+                    <li class="list-group-item">Rocky: <span id="rockyResult">0</span> votes</li>
+                </ul>
+
+                <!-- Navigation buttons for Back and Next -->
+                <div class="mt-4 d-flex justify-content-between">
+                    <a href="mona.html" class="btn btn-secondary">Back to Mona</a>
+                    <a href="tenley.html" class="btn btn-secondary">Next to Tenley</a>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 Travis's Cat Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
